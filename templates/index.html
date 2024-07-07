@@ -2,9 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Frontend</title>
+    <style>
+        body {
+            background-color: #191919;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .header .logo {
+            background-image: url('path/to/logo.png');
+            background-size: cover;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+        }
+
+        .footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+        }
+
+        .footer input {
+            padding: 10px;
+            width: 300px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .footer button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #4A4A4A;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .footer button:hover {
+            background-color: #5A5A5A;
+        }
+
+    </style>
 </head>
 <body>
-
+<div class="container">
+    <div class="header">
+        <div class="logo"></div>
+    </div>
+</div>
+<div class="footer">
+    <input type="text" placeholder="Message ChatGPT">
+    <button>Send</button>
+</div>
 </body>
 </html>
